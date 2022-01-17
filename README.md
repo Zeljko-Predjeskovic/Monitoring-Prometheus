@@ -51,7 +51,7 @@ Build container with app and database
 ![](./img/discovery.PNG)
 ![](./img/Run.PNG)
 
-## Grafana
+## Graph
 
 ![](./img/Result1.PNG)
 
