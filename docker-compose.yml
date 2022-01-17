@@ -2,6 +2,7 @@ version: "2"
 
 services:
   social-media-api-server:
+    hostname: socialmedia
     build: .
     ports:
       - "8080:8080"

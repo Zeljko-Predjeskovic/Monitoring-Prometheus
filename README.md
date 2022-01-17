@@ -20,12 +20,38 @@ Build container with app and database
 
 ## Prometheus configuration yml
 
+## Maven Dependencies
+
+            <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+## Application.properties
+
+    management.endpoint.prometheus.enabled=true
+    
+    management.endpoints.web.exposure.include=*
+    
+    management.metrics.export.prometheus.enabled=true
+
+## Configuration
+
 ![](./img/pro,Config.PNG)
 
 ## Prometheus Status and Service Discovery
 
 ![](./img/promStat.PNG)
 ![](./img/discovery.PNG)
+![](./img/Run.PNG)
 
-## Make an Insertion Post request
+## Grafana
+
+![](./img/Result1.PNG)
 
